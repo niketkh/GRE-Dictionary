@@ -1,0 +1,21 @@
+
+<h2 class="sub-header">Words</h2>
+<div class="table-responsive" ng-init="getWords()">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Meaning</th>
+      <th>Sentences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="word in words">
+      <td>{{word.word}}</td>
+      <td>{{word.meaning}}</td>
+      <td>{{word.sentences[0].sentence}}</td>
+      <td><a href="#/words/edit/{{word._id}}" class="btn btn-primary">Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>

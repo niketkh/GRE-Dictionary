@@ -1,0 +1,11 @@
+
+<h2 class="sub-header">Dashboard</h2>
+<div class="table-responsive" ng-init="getWords()">
+	<div class="card-columns">
+		<div class="card card-block" ng-repeat="word in words">
+		  <h4 class="card-title">{{word.word | capitalize}}</h4>
+		  <h6 class="card-text"><em>{{word.meaning | lowercase}}</em></h6>
+		  <a href="#/words/edit/{{word._id}}" class="card-link">Edit</a>
+		</div>
+	</div>
+</div>

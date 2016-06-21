@@ -1,0 +1,13 @@
+{
+	"name":"onelist",
+	"description": "GRE Dictionary",
+	"versions":"1.0.0",
+	"main": "app.js",
+	"dependencies":		{
+		"express":"*",
+		"body-parser":"*",
+		"mongojs":"*"
+	},
+	"author":"Niket Khandelwal",
+	"license": "ISC"
+}

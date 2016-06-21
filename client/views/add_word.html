@@ -1,0 +1,68 @@
+<h2 class="sub-header">Add Word</h2>
+<form ng-submit="addWord()">
+   <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Word</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="word" ng-model="word.word" placeholder="Word">
+    </div>   
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Meaning</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" ng-model="word.meaning" name="meaning" placeholder="Meaning">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Word Class</label>
+    <div class="col-sm-10">
+      <select class="c-select form-control" name="wordclass" ng-model="word.sentences[0].wordclass">
+        <option value="Adjective" selected="selected">Adjective</option>
+        <option value="Noun">Noun</option>
+        <option value="Verb">Verb</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Sentence</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" rows="3" name="sentence" ng-model="word.sentences[0].sentence" placeholder="Sentence"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Class</label>
+    <div class="col-sm-10">
+      <select class="c-select form-control" name="class" ng-model="word.class">
+        <option value="Common">Common</option>
+        <option value="Basic">Basic</option>
+        <option value="Advanced" selected="selected">Advanced</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Difficulty</label>
+    <div class="col-sm-10">
+      <select class="c-select form-control" name="difficulty" ng-model="word.difficulty">
+        <option value="Very Easy">Very Easy</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium" selected="selected">Medium</option>
+        <option value="Hard">Hard</option>
+        <option value="Very Hard">Very Hard</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Day</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="day" ng-model="word.day" placeholder="Day">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 form-control-label">Wordlist</label>
+    <div class="col-sm-10">
+      <select class="c-select form-control" name="wordlist" ng-model="word.wordlist">
+        <option value="Magoosh" selected="selected">Magoosh</option>
+      </select>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
